@@ -23,6 +23,9 @@
 		A5E193D5257D502700381C07 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D4257D502700381C07 /* UIImage+extension.swift */; };
 		A5E193D7257D511400381C07 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D6257D511400381C07 /* UIImageView+extension.swift */; };
 		A5E193DA257D78AA00381C07 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D9257D78AA00381C07 /* FavoriteStore.swift */; };
+		A5E193DE257D920100381C07 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193DD257D920100381C07 /* HomeViewModelTests.swift */; };
+		A5E193E0257D921500381C07 /* HomeServiceSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193DF257D921500381C07 /* HomeServiceSuccessMock.swift */; };
+		A5E193E2257D93FC00381C07 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193E1257D93FC00381C07 /* DetailViewModelTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +68,9 @@
 		A5E193D4257D502700381C07 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
 		A5E193D6257D511400381C07 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
 		A5E193D9257D78AA00381C07 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
+		A5E193DD257D920100381C07 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		A5E193DF257D921500381C07 /* HomeServiceSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceSuccessMock.swift; sourceTree = "<group>"; };
+		A5E193E1257D93FC00381C07 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +138,8 @@
 		A5223CE3257BBF3500D7EBE3 /* rickandmortyTests */ = {
 			isa = PBXGroup;
 			children = (
+				A5E193DC257D91F100381C07 /* Detail */,
+				A5E193DB257D91E500381C07 /* Home */,
 				A5223CE4257BBF3500D7EBE3 /* rickandmortyTests.swift */,
 				A5223CE6257BBF3500D7EBE3 /* Info.plist */,
 			);
@@ -230,6 +238,23 @@
 				A5E193D9257D78AA00381C07 /* FavoriteStore.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		A5E193DB257D91E500381C07 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				A5E193DD257D920100381C07 /* HomeViewModelTests.swift */,
+				A5E193DF257D921500381C07 /* HomeServiceSuccessMock.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		A5E193DC257D91F100381C07 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				A5E193E1257D93FC00381C07 /* DetailViewModelTests.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -382,6 +407,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5223CE5257BBF3500D7EBE3 /* rickandmortyTests.swift in Sources */,
+				A5E193DE257D920100381C07 /* HomeViewModelTests.swift in Sources */,
+				A5E193E0257D921500381C07 /* HomeServiceSuccessMock.swift in Sources */,
+				A5E193E2257D93FC00381C07 /* DetailViewModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

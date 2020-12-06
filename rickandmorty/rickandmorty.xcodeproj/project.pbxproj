@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A5223CCE257BBF3400D7EBE3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223CCD257BBF3400D7EBE3 /* AppDelegate.swift */; };
 		A5223CD0257BBF3400D7EBE3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223CCF257BBF3400D7EBE3 /* SceneDelegate.swift */; };
-		A5223CD2257BBF3400D7EBE3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223CD1257BBF3400D7EBE3 /* HomeViewController.swift */; };
+		A5223CD2257BBF3400D7EBE3 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223CD1257BBF3400D7EBE3 /* HomeTableViewController.swift */; };
 		A5223CD7257BBF3500D7EBE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5223CD6257BBF3500D7EBE3 /* Assets.xcassets */; };
 		A5223CDA257BBF3500D7EBE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5223CD8257BBF3500D7EBE3 /* LaunchScreen.storyboard */; };
 		A5223CE5257BBF3500D7EBE3 /* rickandmortyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223CE4257BBF3500D7EBE3 /* rickandmortyTests.swift */; };
@@ -20,7 +20,9 @@
 		A5223D0B257BC49E00D7EBE3 /* HomeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223D0A257BC49E00D7EBE3 /* HomeService.swift */; };
 		A5223D11257BCDDC00D7EBE3 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223D10257BCDDC00D7EBE3 /* DetailViewController.swift */; };
 		A5223D13257BCDF900D7EBE3 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223D12257BCDF900D7EBE3 /* DetailViewModel.swift */; };
-		A5223D15257BCE0200D7EBE3 /* DetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5223D14257BCE0200D7EBE3 /* DetailModel.swift */; };
+		A5E193D5257D502700381C07 /* UIImage+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D4257D502700381C07 /* UIImage+extension.swift */; };
+		A5E193D7257D511400381C07 /* UIImageView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D6257D511400381C07 /* UIImageView+extension.swift */; };
+		A5E193DA257D78AA00381C07 /* FavoriteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193D9257D78AA00381C07 /* FavoriteStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +46,7 @@
 		A5223CCA257BBF3400D7EBE3 /* rickandmorty.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rickandmorty.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A5223CCD257BBF3400D7EBE3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A5223CCF257BBF3400D7EBE3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A5223CD1257BBF3400D7EBE3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A5223CD1257BBF3400D7EBE3 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		A5223CD6257BBF3500D7EBE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5223CD9257BBF3500D7EBE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5223CDB257BBF3500D7EBE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -60,7 +62,9 @@
 		A5223D0A257BC49E00D7EBE3 /* HomeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeService.swift; sourceTree = "<group>"; };
 		A5223D10257BCDDC00D7EBE3 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A5223D12257BCDF900D7EBE3 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
-		A5223D14257BCE0200D7EBE3 /* DetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailModel.swift; sourceTree = "<group>"; };
+		A5E193D4257D502700381C07 /* UIImage+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+extension.swift"; sourceTree = "<group>"; };
+		A5E193D6257D511400381C07 /* UIImageView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+extension.swift"; sourceTree = "<group>"; };
+		A5E193D9257D78AA00381C07 /* FavoriteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 		A5223CCC257BBF3400D7EBE3 /* rickandmorty */ = {
 			isa = PBXGroup;
 			children = (
+				A5E193D8257D789600381C07 /* Utils */,
+				A5E193D3257D501600381C07 /* Extensions */,
 				A5223D0C257BCDB700D7EBE3 /* Detail */,
 				A5223CFF257BC41B00D7EBE3 /* Home */,
 				A5223CCD257BBF3400D7EBE3 /* AppDelegate.swift */,
@@ -155,8 +161,7 @@
 		A5223D00257BC42D00D7EBE3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A5223CD1257BBF3400D7EBE3 /* HomeViewController.swift */,
-				A5223D05257BC46500D7EBE3 /* Cell */,
+				A5223CD1257BBF3400D7EBE3 /* HomeTableViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -185,17 +190,9 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
-		A5223D05257BC46500D7EBE3 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
 		A5223D0C257BCDB700D7EBE3 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				A5223D0F257BCDC300D7EBE3 /* Model */,
 				A5223D0E257BCDBF00D7EBE3 /* ViewModel */,
 				A5223D0D257BCDBB00D7EBE3 /* View */,
 			);
@@ -218,12 +215,21 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		A5223D0F257BCDC300D7EBE3 /* Model */ = {
+		A5E193D3257D501600381C07 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				A5223D14257BCE0200D7EBE3 /* DetailModel.swift */,
+				A5E193D4257D502700381C07 /* UIImage+extension.swift */,
+				A5E193D6257D511400381C07 /* UIImageView+extension.swift */,
 			);
-			path = Model;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5E193D8257D789600381C07 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A5E193D9257D78AA00381C07 /* FavoriteStore.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -357,12 +363,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5223D0B257BC49E00D7EBE3 /* HomeService.swift in Sources */,
+				A5E193DA257D78AA00381C07 /* FavoriteStore.swift in Sources */,
 				A5223CFE257BBFDF00D7EBE3 /* AppCoordinator.swift in Sources */,
-				A5223CD2257BBF3400D7EBE3 /* HomeViewController.swift in Sources */,
+				A5223CD2257BBF3400D7EBE3 /* HomeTableViewController.swift in Sources */,
+				A5E193D5257D502700381C07 /* UIImage+extension.swift in Sources */,
 				A5223D09257BC49400D7EBE3 /* HomeModel.swift in Sources */,
 				A5223D13257BCDF900D7EBE3 /* DetailViewModel.swift in Sources */,
+				A5E193D7257D511400381C07 /* UIImageView+extension.swift in Sources */,
 				A5223CCE257BBF3400D7EBE3 /* AppDelegate.swift in Sources */,
-				A5223D15257BCE0200D7EBE3 /* DetailModel.swift in Sources */,
 				A5223D11257BCDDC00D7EBE3 /* DetailViewController.swift in Sources */,
 				A5223D07257BC48B00D7EBE3 /* HomeViewModel.swift in Sources */,
 				A5223CD0257BBF3400D7EBE3 /* SceneDelegate.swift in Sources */,

@@ -25,8 +25,18 @@ class AppCoordinator:CoordinatorProtocol {
     }
     
     func start() {
-        
+        let viewModel = HomeViewModel()
+        viewModel.coordinator = self
+        let homeViewController = HomeTableViewController(viewModel: viewModel)
+        viewModel.delegate = homeViewController
+        self.navigationController = UINavigationController(rootViewController: homeViewController)
+        self.window.rootViewController = self.navigationController
     }
     
+    func showDetail(character:CharacterModel){
+        let viewModel = DetailViewModel(character: character)
+        let detailViewController = DetailViewController(viewModel: viewModel)
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
     
 }

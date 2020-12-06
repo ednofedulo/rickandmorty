@@ -7,3 +7,32 @@
 //
 
 import Foundation
+
+protocol DetailViewModelViewDelegate:AnyObject {
+    
+}
+
+class DetailViewModel: DetailViewModelViewDelegate {
+    
+    var model:CharacterModel?
+    
+    init(character:CharacterModel) {
+        self.model = character
+    }
+    
+    func toggleFavoriteCharacter() {
+        
+        guard let model = model else { return }
+        if self.model?.isFavorited == nil {
+            self.model?.isFavorited = true
+        } else {
+            self.model?.isFavorited?.toggle()
+        }
+        
+        if self.model?.isFavorited == true {
+            FavoriteStore.addFavorite(model.id!)
+        } else {
+            FavoriteStore.removeFavorite(model.id!)
+        }
+    }
+}

@@ -36,4 +36,9 @@ extension UIImageView {
         
         task.resume()
     }
+    
+    func withTintColor(_ color:UIColor) -> UIImageView {
+        self.tintColor = color
+        return self
+    }
 }

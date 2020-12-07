@@ -53,7 +53,7 @@ class HomeTableViewController: UITableViewController {
         }
         
         if let isFavorited = character.isFavorited, isFavorited {
-            cell.accessoryType = .checkmark
+            cell.accessoryView = UIImageView(image: UIImage(systemName: "star.fill")?.withRenderingMode(.alwaysTemplate)).withTintColor(.systemYellow)
         }
         
         return cell

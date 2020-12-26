@@ -26,7 +26,6 @@ class DetailViewController: UIViewController {
         let s = UIStackView()
         s.axis = .vertical
         s.spacing = 10
-        
         s.translatesAutoresizingMaskIntoConstraints = false
         return s
     }()
@@ -52,13 +51,22 @@ class DetailViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .systemBackground
-        navigationItem.largeTitleDisplayMode = .never
+        
         
         addSubviews()
         setupConstraints()
         setupView()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationItem.largeTitleDisplayMode = .never
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.animateAll(views: stackView.arrangedSubviews.filter {$0 is UILabel}, interval: 0.05)
+    }
     
     private func addSubviews(){
         self.view.addSubview(scrollView)
@@ -73,6 +81,7 @@ class DetailViewController: UIViewController {
         label.text = text!.isEmpty ? "-" : text
         label.adjustsFontForContentSizeCategory = true
         label.font = UIFont.preferredFont(forTextStyle: .headline)
+        label.alpha = 0
         return label
     }
     
@@ -81,6 +90,7 @@ class DetailViewController: UIViewController {
         label.text = text!.isEmpty ? "-" : text
         label.adjustsFontForContentSizeCategory = true
         label.font = UIFont.preferredFont(forTextStyle: .subheadline)
+        label.alpha = 0
         return label
     }
     
@@ -148,5 +158,19 @@ class DetailViewController: UIViewController {
     @objc func toggleFavorite(){
         self.viewModel?.toggleFavoriteCharacter()
         setupFavoriteButton()
+    }
+    
+    func animateAll(views:[UIView], interval:Double) {
+        
+        for (index, view) in views.enumerated() {
+            UIView.animate(withDuration: interval, delay: interval * Double(index), options: [.transitionCrossDissolve, .curveEaseOut], animations: {
+                view.transform = CGAffineTransform(scaleX: 1.05, y: 1.05)
+                view.alpha = 1.0
+            }) { _ in
+                UIView.animate(withDuration: interval) {
+                    view.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+                }
+            }
+        }
     }
 }

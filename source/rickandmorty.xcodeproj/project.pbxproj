@@ -26,6 +26,9 @@
 		A5E193DE257D920100381C07 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193DD257D920100381C07 /* HomeViewModelTests.swift */; };
 		A5E193E0257D921500381C07 /* HomeServiceSuccessMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193DF257D921500381C07 /* HomeServiceSuccessMock.swift */; };
 		A5E193E2257D93FC00381C07 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E193E1257D93FC00381C07 /* DetailViewModelTests.swift */; };
+		A5ED8F6825868EB100C65480 /* TransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED8F6725868EB100C65480 /* TransitionController.swift */; };
+		A5ED8F6D25868F0000C65480 /* PushAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED8F6C25868F0000C65480 /* PushAnimator.swift */; };
+		A5ED8F7225868F4B00C65480 /* PopAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5ED8F7125868F4B00C65480 /* PopAnimator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		A5E193DD257D920100381C07 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
 		A5E193DF257D921500381C07 /* HomeServiceSuccessMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeServiceSuccessMock.swift; sourceTree = "<group>"; };
 		A5E193E1257D93FC00381C07 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		A5ED8F6725868EB100C65480 /* TransitionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionController.swift; sourceTree = "<group>"; };
+		A5ED8F6C25868F0000C65480 /* PushAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushAnimator.swift; sourceTree = "<group>"; };
+		A5ED8F7125868F4B00C65480 /* PopAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopAnimator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,9 @@
 			isa = PBXGroup;
 			children = (
 				A5223CD1257BBF3400D7EBE3 /* HomeTableViewController.swift */,
+				A5ED8F6725868EB100C65480 /* TransitionController.swift */,
+				A5ED8F6C25868F0000C65480 /* PushAnimator.swift */,
+				A5ED8F7125868F4B00C65480 /* PopAnimator.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -391,11 +400,14 @@
 				A5E193DA257D78AA00381C07 /* FavoriteStore.swift in Sources */,
 				A5223CFE257BBFDF00D7EBE3 /* AppCoordinator.swift in Sources */,
 				A5223CD2257BBF3400D7EBE3 /* HomeTableViewController.swift in Sources */,
+				A5ED8F7225868F4B00C65480 /* PopAnimator.swift in Sources */,
 				A5E193D5257D502700381C07 /* UIImage+extension.swift in Sources */,
 				A5223D09257BC49400D7EBE3 /* HomeModel.swift in Sources */,
 				A5223D13257BCDF900D7EBE3 /* DetailViewModel.swift in Sources */,
 				A5E193D7257D511400381C07 /* UIImageView+extension.swift in Sources */,
 				A5223CCE257BBF3400D7EBE3 /* AppDelegate.swift in Sources */,
+				A5ED8F6825868EB100C65480 /* TransitionController.swift in Sources */,
+				A5ED8F6D25868F0000C65480 /* PushAnimator.swift in Sources */,
 				A5223D11257BCDDC00D7EBE3 /* DetailViewController.swift in Sources */,
 				A5223D07257BC48B00D7EBE3 /* HomeViewModel.swift in Sources */,
 				A5223CD0257BBF3400D7EBE3 /* SceneDelegate.swift in Sources */,

@@ -10,6 +10,9 @@ import UIKit
 
 class HomeTableViewController: UITableViewController {
 
+    var selectedCellImage:UIImageView?
+    var selectedIndexPath:IndexPath?
+    
     var viewModel:HomeViewModel?
     
     init(viewModel:HomeViewModel) {
@@ -24,13 +27,15 @@ class HomeTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.navigationBar.prefersLargeTitles = true
+        //navigationController?.navigationBar.prefersLargeTitles = true
         self.title = self.viewModel?.screenTitle
         self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        //navigationItem.largeTitleDisplayMode = .always
+//        navigationController?.navigationBar.prefersLargeTitles = true
         self.tableView.reloadData()
     }
     
@@ -66,6 +71,10 @@ class HomeTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let cell = tableView.cellForRow(at: indexPath)
+        cell?.selectionStyle = .none
+        self.selectedCellImage = cell?.imageView
+        self.selectedIndexPath = indexPath
         self.viewModel?.didSelectRow(at: indexPath.row)
     }
 
